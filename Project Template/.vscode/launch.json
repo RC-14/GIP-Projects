@@ -7,7 +7,8 @@
 			"type": "lldb",
 			"request": "launch",
 			"program": "main",
-			"cwd": "${workspaceRoot}"
+			"cwd": "${workspaceRoot}",
+			"internalConsoleOptions": "neverOpen"
 		},
 		{
 			"name": "C/C++: Debug (GIP default)",
