@@ -3,3 +3,6 @@
 
 # Compiled output
 main
+
+# PDFs (avoid copy right trouble)
+*.pdf
