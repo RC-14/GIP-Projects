@@ -16,6 +16,6 @@ int main() {
 		return 1;
 	}
 
-	cout << input1 << " + " << input2 << " = " << int(input1) + int(input2) - 96 << endl;
+	cout << input1 << " + " << input2 << " = " << int(input1) + int(input2) - '0' * 2 << endl;
 	return 0;
 }
