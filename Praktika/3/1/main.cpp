@@ -27,31 +27,19 @@ int main() {
 
 	if (jahr1 < jahr2) {
 		cout << "Das erste Datum liegt vor dem zweiten Datum." << endl;
-		return 0;
-	}
-	else if (jahr1 > jahr2) {
+	} else if (jahr1 > jahr2) {
 		cout << "Das zweite Datum liegt vor dem ersten Datum." << endl;
-		return 0;
-	}
-
-	if (monat1 < monat2) {
+	} else if (monat1 < monat2) {
 		cout << "Das erste Datum liegt vor dem zweiten Datum." << endl;
-		return 0;
-	}
-	else if (monat1 > monat2) {
+	} else if (monat1 > monat2) {
 		cout << "Das zweite Datum liegt vor dem ersten Datum." << endl;
-		return 0;
-	}
-
-	if (tag1 < tag2) {
+	} else if (tag1 < tag2) {
 		cout << "Das erste Datum liegt vor dem zweiten Datum." << endl;
-		return 0;
-	}
-	else if (tag1 > tag2) {
+	} else if (tag1 > tag2) {
 		cout << "Das zweite Datum liegt vor dem ersten Datum." << endl;
-		return 0;
+	} else {
+		cout << "Beide Datumsangaben sind gleich." << endl;
 	}
 
-	cout << "Beide Datumsangaben sind gleich." << endl;
 	return 0;
 }
