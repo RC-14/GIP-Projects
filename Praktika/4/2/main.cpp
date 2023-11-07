@@ -14,7 +14,7 @@ int main() {
 
 	// Parse
 	for (int i = 0; i < 11; i++) {
-		if (i == 4 || i == 8) continue;
+		if (i == 3 || i == 7) continue;
 
 		int nLine = i;
 		if (nLine > 2) nLine--;
