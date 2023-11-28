@@ -12,9 +12,12 @@
 				"-Wno-c++11-narrowing",
 				"-fdiagnostics-color=always",
 				"-I.",
+				"-I/opt/X11/include",
+				"-L/opt/X11/lib",	  
 				"-o",
 				"main",
 				"*.cpp",
+				"-lX11",
 				"-pthread"
 			],
 			"problemMatcher": [
