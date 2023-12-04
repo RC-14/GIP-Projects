@@ -42,7 +42,7 @@ int main() {
 		if (yb <= y0) delta_y *= -1;
 
 		// Kollision mit Schlaeger ...
-		if (yb >= ys && xb >= xs && xb + ball_size <= xs + schlaeger_size_x) delta_y *= -1;
+		if (yb + ball_size >= ys && xb + ball_size > xs && xb < xs + schlaeger_size_x) delta_y *= -1;
 
 		// Unterer Rand erreicht => Abbruch
 		if (yb + ball_size >= y1) {
