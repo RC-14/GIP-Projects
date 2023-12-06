@@ -15,6 +15,7 @@ string trimme(string input) {
 		}
 
 		output += buffer + input[i];
+		buffer = "";
 	}
 
 	return output;
