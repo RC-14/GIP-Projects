@@ -70,12 +70,17 @@ int main() {
 	getline(cin, input);
 
 	for (int i = 0; i < input.length(); i++) {
+		char c = input[i];
+
+		if (c >= 'A' && c <= 'Z') c = c - 'A' + 'a';
+
 		for (int j = 0; j < morse_data_len; j++){
-			if (morse_data[j].letter != input[i]) continue;
+			if (morse_data[j].letter != c) continue;
 
 			cout << morse_data[j].morse_code;
 			break;
 		}
+		cout << '#';
 	}
 
 	cout << endl;
