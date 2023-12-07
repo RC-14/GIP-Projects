@@ -21,7 +21,7 @@ char* my_strconcat(const char* ptr1, const char* ptr2) {
 		oi++;
 	}
 
-	output[maxLength * 2] = '\0';
+	output[oi] = '\0';
 
 	return output;
 }
