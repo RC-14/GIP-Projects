@@ -7,7 +7,7 @@ int main() {
 
 	for (int i = 0; i < 9; i++) {
 		char c = ' ';
-		while (c < '0' || c > '6') {
+		while (c < '1' || c > '6') {
 			cout << "Bitte geben Sie die " << i + 1 << ". Zahl ein: ? ";
 			cin >> c;
 		}
