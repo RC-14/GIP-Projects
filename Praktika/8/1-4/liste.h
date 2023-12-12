@@ -18,4 +18,4 @@ void hinten_anfuegen(TListenKnoten*& anker, const int wert);
 
 void in_liste_einfuegen(TListenKnoten*& anker, int wert_neu, int vor_wert);
 
-void aus_liste_loeschen(TListenKnoten* &anker, int wert);
+void aus_liste_loeschen(TListenKnoten*& anker, int wert);
