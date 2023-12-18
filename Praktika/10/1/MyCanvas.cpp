@@ -1,4 +1,4 @@
-#include <MyCanvas.h>
+#include "MyCanvas.h"
 
 char* copyCanvasArray(char* array) {
 	int i = 0;
@@ -25,7 +25,7 @@ void MyCanvas::init() {
 MyCanvas::MyCanvas(unsigned size_x, unsigned size_y) {
 	this->size_x = size_x;
 	this->size_y = size_y;
-	canvas_array_ptr = new char[get_canvas_array_position(size_x - 1, size_y - 1) + 1];
+	canvas_array_ptr = new char[get_canvas_array_position(size_x - 1, size_y - 1) + 2];
 	init();
 };
 
@@ -42,6 +42,10 @@ MyCanvas::~MyCanvas() {
 MyCanvas MyCanvas::operator=(const MyCanvas& orig) {
 	size_x = orig.size_x;
 	size_y = orig.size_y;
+
+	// Here be dragons
+	// delete [] canvas_array_ptr;
+
 	canvas_array_ptr = copyCanvasArray(orig.canvas_array_ptr);
 
 	return orig;
