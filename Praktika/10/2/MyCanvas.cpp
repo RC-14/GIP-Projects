@@ -39,12 +39,14 @@ MyCanvas::~MyCanvas() {
 	delete[] canvas_array_ptr;
 };
 
-MyCanvas MyCanvas::operator=(const MyCanvas& orig) {
+MyCanvas& MyCanvas::operator=(const MyCanvas& orig) {
 	size_x = orig.size_x;
 	size_y = orig.size_y;
+
+	delete [] canvas_array_ptr;
 	canvas_array_ptr = copyCanvasArray(orig.canvas_array_ptr);
 
-	return orig;
+	return *this;
 };
 
 void MyCanvas::set_size_x(unsigned size_x) {

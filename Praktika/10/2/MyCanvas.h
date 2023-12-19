@@ -19,7 +19,7 @@ public:
 	MyCanvas(const MyCanvas& orig);
 	~MyCanvas();
 
-	MyCanvas operator=(const MyCanvas& orig);
+	MyCanvas& operator=(const MyCanvas& orig);
 
 	void set_size_x(unsigned size_x);
 	void set_size_y(unsigned size_y);
