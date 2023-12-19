@@ -25,7 +25,7 @@ void MyCanvas::init() {
 MyCanvas::MyCanvas(unsigned size_x, unsigned size_y) {
 	this->size_x = size_x;
 	this->size_y = size_y;
-	canvas_array_ptr = new char[get_canvas_array_position(size_x - 1, size_y - 1) + 2];
+	canvas_array_ptr = new char[get_canvas_array_position(size_x - 1, size_y - 1) + 1];
 	init();
 };
 

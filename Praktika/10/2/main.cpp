@@ -44,6 +44,5 @@ int main()
     r1.draw();
     canvas.print();
 
-    system("PAUSE");
     return 0;
 }

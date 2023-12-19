@@ -1,5 +1,7 @@
 #include "BaumKnoten.h"
 
+#pragma once
+
 class BinaererSuchbaum {
 	BaumKnoten* root = nullptr;
 public:

@@ -1,5 +1,7 @@
 #include "MyCanvas.h"
 
+#pragma once
+
 class MyRectangle {
 protected:
 	unsigned x1, y1, x2, y2;
