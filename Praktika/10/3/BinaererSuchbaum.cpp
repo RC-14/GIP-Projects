@@ -1,3 +1,4 @@
+#include <iostream>
 #include <BinaererSuchbaum.h>
 
 void BinaererSuchbaum::einfuegen(int data) {
@@ -27,5 +28,9 @@ void BinaererSuchbaum::einfuegen(int data) {
 }
 
 void BinaererSuchbaum::ausgeben() const {
-	if (root != nullptr) root->ausgeben(0);
+	if (root != nullptr) {
+		root->ausgeben(0);
+		return;
+	}
+	std::cout << "Leerer Baum." << std::endl;
 }
